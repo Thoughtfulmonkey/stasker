@@ -1,0 +1,207 @@
+
+body{
+	background-color: #988575;
+	background-image: url("./simple-style/background-1.png");
+	margin:30px 0px; 
+	padding:0px;
+	text-align:center;
+}
+
+.standard-head {
+	width:800px;
+	height: 15px;
+	margin:0px auto;
+	margin-bottom: 10px;
+	text-align:left;
+	padding:15px;
+	border: none;
+	background-color:#F3F7FA;
+}
+
+.content {
+	width:800px;
+	margin:0px auto;
+	margin-bottom: 10px;
+	text-align:left;
+	padding:15px;
+	border: none;
+	background-color:#F3F7FA;
+}
+
+.smallContent {
+	width: 80%;
+	margin:0px auto;
+	margin-bottom: 10px;
+	text-align:left;
+	padding:15px;
+	border: none;
+}
+
+.sectionGroup{
+	width: 256px;
+	margin: 5px;
+	float: left;
+}
+
+.sectionGroupTitle{
+	font-family: Arial;
+	font-size: 18px;
+	color: #FFFFFF;
+	margin-bottom: 20px;
+	padding: 10px;
+	background-color: #988575;
+}
+
+#sectionFooter{
+	clear: left;
+	padding-top: 20px;
+	font-family: Arial;
+	font-size: 10px;
+	font-style: italic;
+}
+
+h2.title{
+	margin-top: 0px;
+	font-family: Arial;
+	font-size: 18px;
+	font-style: italic;
+}
+
+h2.sectionTitle{
+	margin-top: 0px;
+	font-family: Arial;
+	font-size: 20px;
+	font-style: italic;
+	margin-bottom: 0px;
+}
+
+h3.title{
+	font-family: Arial;
+	font-size: 16;
+	font-style: italic;
+}
+
+p.title{
+}
+
+table{
+	border:1px solid #988575;
+	border-collapse:collapse;
+}
+
+td{
+	border:1px solid #988575;
+	padding: 8px;
+}
+
+th{
+	border:1px solid #e5eff8;
+	padding: 8px;
+	background:#988575;
+	text-align:center;
+	font:bold 14px "Century Gothic","Trebuchet MS",Arial,Helvetica,sans-serif;
+	color:#F3F7FA;
+}
+
+.tableDivide{
+	padding: 2px;
+	background: #C8B5A5;
+}
+
+#nameBlock{
+	float:left;
+}
+
+#optionBlock{
+	float: right;
+}
+
+.date{
+	margin-top: 0px;
+	font: bold italic 14px Arial;
+}
+
+.chkScroll{
+    height: 50px;
+    padding: 5px;
+    overflow: auto;
+    border: 1px solid #ccc
+}
+
+.sectionDescription{
+	margin-top: 5px;
+}
+
+a img{
+	border: none;
+}
+
+.tableDescription{
+	margin: 0px;
+	font: italic 13px Arial;
+}
+
+.equationBlock{
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid #ccc
+}
+
+.structureTable{
+	border: 0px;
+}
+
+.structureTableEq{
+	border: 0px;
+	background-color:#E2E6E9; 
+}
+
+h4.equationTitle{
+	margin: 5px;
+}
+
+.updateContainer{
+	text-align: right;
+}
+
+.bullet{
+	vertical-align: middle;
+}
+
+#regForm{
+	text-align: center;
+	margin-left: 10px;
+}
+
+.extraInfo{
+	margin-top: 3px;
+	font: italic 13px Arial;
+}
+
+.tblPwd{
+	text-align: right;
+	color: #F3F7FA;
+}
+
+#leftBlock{
+	float:left;
+}
+
+#rightBlock{
+	float: right;
+}
+
+.label{
+	float: left;
+	background: #FFFFFF;
+	padding: 5px;
+	margin: 3px;
+}
+
+.inblack{
+	color: #00AA00;
+}
+
+.inred{
+	color: #CC0000;
+}

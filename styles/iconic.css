@@ -1,0 +1,247 @@
+
+body{
+	background-color: #EFEFF6;
+	margin:30px 0px; 
+	padding:0px;
+	text-align:center;
+	font-family: Arial;
+}
+
+.standard-head {
+	width:800px;
+	height: 15px;
+	margin:0px auto;
+	margin-bottom: 10px;
+	text-align:left;
+	padding:15px;
+	border: none;
+	background-color: #4D4D4F;
+}
+
+.content {
+	width:800px;
+	margin:0px auto;
+	margin-bottom: 10px;
+	text-align:left;
+	padding:15px;
+	border: none;
+	background-color:#FFFFFF;
+}
+
+.smallContent {
+	width: 80%;
+	margin:0px auto;
+	margin-bottom: 10px;
+	text-align:left;
+	padding:15px;
+	border: none;
+}
+
+.sectionGroup{
+	width: 256px;
+	margin: 5px;
+	float: left;
+}
+
+.sectionGroupTitle{
+	font-family: Arial;
+	font-size: 18px;
+	color: #FFFFFF;
+	margin-bottom: 20px;
+	padding: 10px;
+	background-color: #4D4D4F;
+}
+
+#sectionFooter{
+	clear: left;
+	padding-top: 20px;
+	font-family: Arial;
+	font-size: 10px;
+	font-style: italic;
+}
+
+h2.title{
+	margin-top: 0px;
+	font-family: Arial;
+	font-size: 18px;
+	font-style: italic;
+}
+
+h2.sectionTitle{
+	margin-top: 0px;
+	font-family: Arial;
+	font-size: 20px;
+	font-style: italic;
+	margin-bottom: 0px;
+}
+
+h3.title{
+	font-family: Arial;
+	font-size: 16;
+	font-style: italic;
+}
+
+p.title{
+}
+
+table{
+	border:1px solid #4D4D4F;
+	border-collapse:collapse;
+}
+
+td{
+	border:1px solid #4D4D4F;
+	padding: 8px;
+}
+
+th{
+	border:1px solid #FDFDFD;
+	padding: 8px;
+	background: #4D4D4F;
+	text-align: center;
+	font: bold 14px "Century Gothic","Trebuchet MS",Arial,Helvetica,sans-serif;
+	color: #FDFDFD;
+}
+
+.tableDivide{
+	padding: 2px;
+	background: #C8B5A5;
+}
+
+#nameBlock{
+	float: left;
+	color: #FFFFFF;
+	font: bold 12px "Century Gothic","Trebuchet MS",Arial,Helvetica,sans-serif;
+}
+
+#optionBlock{
+	color: #FFFFFF;
+	font: bold 12px "Century Gothic","Trebuchet MS",Arial,Helvetica,sans-serif;
+}
+
+.standard-head a{
+	color: #FFFFFF;
+}
+
+.standard-head a:hover{
+	color: #BBBBBB;
+}
+
+#optionBlock{
+	float: right;
+}
+
+.date{
+	margin-top: 0px;
+	font: bold italic 14px Arial;
+}
+
+.chkScroll{
+    height: 50px;
+    padding: 5px;
+    overflow: auto;
+    border: 1px solid #ccc
+}
+
+.sectionDescription{
+	margin-top: 5px;
+}
+
+a img{
+	border: none;
+	margin-right: 2px;
+	margin-left: 2px;
+}
+
+.tableDescription{
+	margin: 0px;
+	font: italic 13px Arial;
+}
+
+.equationBlock{
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid #CCCCCC
+}
+
+.structureTable{
+	border: 0px;
+	width: 100%;
+}
+
+.structureTableEq{
+	border: 0px;
+	background-color:#E2E6E9; 
+}
+
+h4.equationTitle{
+	margin: 5px;
+}
+
+.updateContainer{
+	text-align: right;
+}
+
+.bullet{
+	vertical-align: middle;
+	margin-left: 2px;
+}
+
+#regForm{
+	text-align: center;
+	margin-left: 10px;
+}
+
+.extraInfo{
+	margin-top: 3px;
+	font: italic 13px Arial;
+}
+
+.tblPwd{
+	text-align: right;
+	color: #FDFDFD;
+}
+
+#leftBlock{
+	float:left;
+}
+
+#rightBlock{
+	float: right;
+}
+
+.label{
+	float: left;
+	background: #4D4D4F;
+	color: #FFFFFF;
+	padding: 5px;
+	margin: 3px;
+}
+
+.inblack{
+	color: #00AA00;
+}
+
+.inred{
+	color: #CC0000;
+}
+
+.inactive-task{
+	background-color:#DDDDDD;
+}
+
+#nowmarker td{
+	padding: 2px;
+	background-color:#FFDDDD;
+	font: 12px "Century Gothic","Trebuchet MS",Arial,Helvetica,sans-serif;
+	text-align: center;
+}
+
+.unknown {
+	color: red;
+}
+
+.subtleLine{
+	height: 1px;
+	border: #BBBBBB 1px dotted;
+}

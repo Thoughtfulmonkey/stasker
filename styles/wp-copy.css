@@ -1,0 +1,244 @@
+
+body{
+	background-color: #F1F1F1;
+	margin:30px 0px; 
+	padding:0px;
+	text-align:center;
+	color: #404040;
+    font-family: sans-serif;
+}
+
+.standard-head {
+	width:800px;
+	height: 15px;
+	margin:0px auto;
+	margin-bottom: 10px;
+	text-align:left;
+	padding:15px;
+	border: none;
+	background-color:#FFFFFF;
+	border-bottom: 1px solid #DFDFDF;
+    border-right: 1px solid #DFDFDF;
+}
+
+.content {
+	width:800px;
+	margin:0px auto;
+	margin-bottom: 10px;
+	text-align:left;
+	padding:15px;
+	border: none;
+	background-color:#FFFFFF;
+	border-bottom: 1px solid #DFDFDF;
+    border-right: 1px solid #DFDFDF;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.sectionGroup{
+	width: 256px;
+	margin: 5px;
+	float: left;
+}
+
+.sectionGroupTitle{
+	font-family: Arial;
+	font-size: 18px;
+	color: #FFFFFF;
+	margin-bottom: 20px;
+	padding: 10px;
+	background-color: #988575;
+}
+
+#sectionFooter{
+	clear: left;
+	padding-top: 20px;
+	font-family: Arial;
+	font-size: 10px;
+	font-style: italic;
+}
+
+h2.title{
+	margin-top: 0px;
+	font-family: Arial;
+	font-size: 18px;
+	font-style: italic;
+}
+
+h2.sectionTitle{
+	margin-top: 0px;
+	font-family: Arial;
+	font-size: 24px;
+	font-style: italic;
+	margin-bottom: 0px;
+	padding-left: 4px;
+	background-color: #FCFCFC;
+}
+
+h3.title{
+	font-family: Arial;
+	font-size: 16;
+	font-style: italic;
+}
+
+p.title{
+}
+
+hr{
+	color: #DFDFDF;
+	background-color: #DFDFDF;
+	height: 3px;
+	border: 0px;
+}
+
+input{
+	margin: 8px;
+}
+
+img.vote{
+	margin-left: 5px;
+	vertical-align: middle;
+}
+
+table{
+	border: none;
+	border-collapse:collapse;
+}
+
+td{
+	border:none;
+	padding: 8px;
+}
+
+th{
+	border: none;
+	padding: 8px;
+	text-align: left;
+}
+
+tr.oddRow{
+	background: #E7EBEC;
+}
+
+tr.evenRow{
+	
+}
+
+.tableDivide{
+	padding: 2px;
+	background: #C8B5A5;
+}
+
+#nameBlock{
+	float:left;
+}
+
+#optionBlock{
+	float: right;
+}
+
+.date{
+	margin-top: 0px;
+	font: bold italic 14px Arial;
+	background-color: #FCFCFC;
+	padding-left: 4px;
+}
+
+.chkScroll{
+    height: 50px;
+    padding: 5px;
+    overflow: auto;
+    border: 1px solid #ccc
+}
+
+.sectionDescription{
+	margin-top: 5px;
+}
+
+img {
+	border: none;
+}
+
+.tableDescription{
+	margin: 0px;
+	font: italic 13px Arial;
+}
+
+.equationBlock{
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid #ccc
+}
+
+.structureTable{
+	border: 0px;
+}
+
+.structureTableEq{
+	border: 0px;
+	background-color:#E2E6E9; 
+}
+
+h4.equationTitle{
+	margin: 5px;
+}
+
+.updateContainer{
+	text-align: right;
+}
+
+.bullet{
+	vertical-align: middle;
+}
+
+#regForm{
+	text-align: center;
+	margin-left: 10px;
+}
+
+.extraInfo{
+	margin-top: 3px;
+	font: italic 13px Arial;
+}
+
+.tblPwd{
+	text-align: right;
+	color: #F3F7FA;
+}
+
+a{
+	text-decoration: none;
+	color: #4b8cbe;
+}
+
+a:hover{
+	color: #f5834b;
+}
+
+.animHolder{
+	text-align: center;
+}
+
+#leftBlock{
+	float:left;
+	margin-top: -10px;
+}
+
+#rightBlock{
+	float: right;
+	margin-top: -10px;
+}
+
+.voteOption{
+	height: 30px;
+	vertical-align: middle;
+}
+
+#graphArea{
+	width: 800px;
+	height: 400px;
+}
+
+.formElement{
+	height: 40px;
+	vertical-align: middle;
+}
