@@ -12,6 +12,7 @@
 	
 	<?php
 		include '../dbconnect.php';
+		include '../config.php';
 		
 		$currentLocation = "Manage Users";
 		include 'standard-header.php';
@@ -54,8 +55,10 @@
 								$stmt->bindValue(':saveid', $saveID, PDO::PARAM_INT);
 								$stmt->execute();
 									
+								$hashedpass = crypt( $password, $secretsalt );	
+								
 								$stmt = $db->prepare("UPDATE `user` SET `password`=:password WHERE `id`=:saveid");
-								$stmt->bindValue(':password', $password, PDO::PARAM_STR);
+								$stmt->bindValue(':password', $hashedpass, PDO::PARAM_STR);
 								$stmt->bindValue(':saveid', $saveID, PDO::PARAM_INT);
 								$stmt->execute();
 							
@@ -84,11 +87,13 @@
 						if ($display != ""){
 							if ($password != "") {
 							
+								$hashedpass = crypt( $password, $secretsalt );
+							
 								// Write to db
 								$stmt = $db->prepare("INSERT INTO `user` (`login`, `display_name`, `password`, `email`) VALUES (:login, :display, :password, '')");
 								$stmt->bindValue(':login', $login, PDO::PARAM_STR);
 								$stmt->bindValue(':display', $display, PDO::PARAM_STR);
-								$stmt->bindValue(':password', $password, PDO::PARAM_STR);
+								$stmt->bindValue(':password', $hashedpass, PDO::PARAM_STR);
 								$stmt->execute();
 								
 							} else echo "<script type='text/javascript'>alert('A password must be set.');</script>";
@@ -138,7 +143,7 @@
 							
 							echo "<td>".$row['login']."</td>";
 							echo "<td>".$row['display_name']."</td>";
-							echo "<td class='tblPwd'>".$row['password']."</td>";
+							echo "<td class='tblPwd'></td>";
 							
 							if ( $row['group'] != NULL ) {
 								echo "<td>".$row['gname']."</td>";
@@ -155,7 +160,7 @@
 								
 							echo "<td><input type='text' name='username' size='25' value='".$row['login']."' /></td>";
 							echo "<td><input type='text' name='displayname' size='25' value='".$row['display_name']."' /></td>";
-							echo "<td><input type='text' name='password' size='25' value='".$row['password']."' /></td>";
+							echo "<td><input type='text' name='password' size='25' value='' /></td>";
 								
 							echo "<td>Change elsewhere</td>";
 							
@@ -170,7 +175,7 @@
 						echo "<tr>";
 						echo "<td>".$row['login']."</td>";
 						echo "<td>".$row['display_name']."</td>";
-						echo "<td class='tblPwd'>".$row['password']."</td>";
+						echo "<td class='tblPwd'></td>";
 						
 							
 						if ( $row['group'] != NULL ) {

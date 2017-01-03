@@ -8,14 +8,17 @@ $validLogin = true;
 if (isset($_POST['username']) && isset($_POST['password'])){
 
 	include 'dbconnect.php';
+	include 'config.php';
 
 	//$user = $_POST['username'];
 	//$pass = $_POST['password'];
 	//$result=mysql_query("SELECT * FROM `user` WHERE `login`='$user' AND `password`='$pass'", $db);
 	
+	$hashedpass = crypt( $_POST['password'], $secretsalt );
+	
 	$check = $db->prepare("SELECT * FROM `user` WHERE `login`=:user AND `password`=:password");
 	$check->bindValue(":user", $_POST['username'], PDO::PARAM_STR);
-	$check->bindValue(":password", $_POST['password'], PDO::PARAM_STR);
+	$check->bindValue(":password", $hashedpass, PDO::PARAM_STR);
 	$check->execute();
 	
 	//check that at least one row was returned

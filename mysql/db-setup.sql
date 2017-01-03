@@ -34,7 +34,8 @@ CREATE TABLE IF NOT EXISTS `admin` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
 
-INSERT INTO `admin` (`login`, `display_name`, `password`) VALUES ("admin", "Default admin", "password");
+-- Password should be the word "password".  Needs to be set in an installation script
+INSERT INTO `admin` (`login`, `display_name`, `password`) VALUES ("admin", "Default admin", "soHDZyOkM1YIE");
 
 -- --------------------------------------------------------
 
@@ -136,6 +137,10 @@ CREATE TABLE IF NOT EXISTS `sim` (
   `sim_date` date NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+
+INSERT INTO `sim` 
+	(`id`, `day_step`, `last_process`, `registration_open`, `allow_db_reset`, `process_key`, `sim_date`) 
+	VALUES (NULL, '1', '2012-02-16', 'yes', 'yes', '1234567890', CURRENT_DATE());
 
 -- --------------------------------------------------------
 

@@ -9,6 +9,7 @@
 
 <?php
 include 'dbconnect.php';
+include 'config.php';
 
 // See if information has been posted
 if ( isset($_POST['login']) ) $login = $_POST['login']; else $login="";
@@ -31,10 +32,12 @@ if ( isset($_POST['login']) ){
 					// Actually add the user
 					$success = true;
 					
+					$hashedpass = crypt( $pwd, $secretsalt );
+					
 					$insert = $db->prepare("INSERT INTO `user` (`login`, `display_name`, `password`) VALUES (:login, :name, :password)");
 					$insert->bindValue(':login', $login, PDO::PARAM_STR);
 					$insert->bindValue(':name', $name, PDO::PARAM_STR);
-					$insert->bindValue(':password', $pwd, PDO::PARAM_STR);
+					$insert->bindValue(':password', $hashedpass, PDO::PARAM_STR);
 					$insert->execute();
 					
 					

@@ -8,10 +8,13 @@ $validLogin = true;
 if (isset($_POST['username']) && isset($_POST['password'])){
 
 	include '../dbconnect.php';
+	include '../config.php';
 
+	$hashedpass = crypt( $_POST['password'], $secretsalt );
+	
 	$stmt = $db->prepare("SELECT * FROM `admin` WHERE `login`=:user AND `password`=:pwd");
 	$stmt->bindValue(':user', $_POST['username'], PDO::PARAM_STR);
-	$stmt->bindValue(':pwd', $_POST['password'], PDO::PARAM_STR);
+	$stmt->bindValue(':pwd', $hashedpass, PDO::PARAM_STR);
 	$stmt->execute();
 	
 	//check that at least one row was returned
@@ -38,9 +41,6 @@ if (isset($_POST['username']) && isset($_POST['password'])){
 </head>
 
 <body>
-	<?php
-		include '../dbconnect.php';
-	?>
 
 	<div class="content">
 		<h2 class="title">Login</h2>
